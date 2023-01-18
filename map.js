@@ -13,10 +13,14 @@ export const getCountryNames = (countries) => {
 // OUTPUT: an array of the names and their iso2 country codes using .map
 // REQS: use .map
 
-export const getCountryCodes = (countries) => {};
+export const getCountryCodes = (countries) => {
+  return countries.map((country) => [country.name, country.ios2]);
+};
 
 // INPUT: the array of shoes from data.js
 // OUTPUT: an array of the brands
 // REQS: use .map
 
-export const getBrands = (brands) => {};
+export const getBrands = (brands) => {
+  return brands.map((brand) => brand.brand);
+};
